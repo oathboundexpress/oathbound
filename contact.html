@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Oathbound Express Delivery Inc. for last-mile logistics solutions, partnership inquiries, or driver applications in Metro Vancouver.">
+  <title>Contact Us | Oathbound Express Delivery Inc.</title>
+  <link rel="icon" type="image/png" href="Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <img src="Logo.png" alt="Oathbound Express Logo">
+          <div class="nav-logo-text">
+            <span class="company-name">OATHBOUND EXPRESS</span>
+            <span class="company-sub">Delivery Inc.</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="careers.html">Drive With Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="careers.html">Drive With Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:12px; justify-content:center;">Get a Quote</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag" style="color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.3); padding: 6px 16px; border-radius: 50px;">Get In Touch</span>
+      <h1 style="margin-top: 1.5rem;">Contact Us</h1>
+      <p>Have a question about our services, want to explore a partnership, or ready to get a quote? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid fade-in">
+        <!-- LEFT: CONTACT INFO -->
+        <div>
+          <h2 style="margin-bottom: 0.5rem;">Let's Talk Logistics</h2>
+          <p style="color: var(--text-light); margin-bottom: 2rem;">Whether you're an e-commerce business looking for a reliable delivery partner, a local company needing shipping solutions, or a driver wanting to join our fleet — we're here to help.</p>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">✉️</div>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="mailto:support@oathboundexpress.com" style="color: var(--primary); font-weight: 500;">support@oathboundexpress.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <h4>Service Area</h4>
+              <p>Metro Vancouver, British Columbia, Canada</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">🕐</div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Monday – Saturday: 7:00 AM – 9:00 PM<br>Sunday: 8:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">⚡</div>
+            <div>
+              <h4>Response Time</h4>
+              <p>We typically respond within 24 hours on business days.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: CONTACT FORM -->
+        <div class="contact-form" id="contactFormWrapper">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="John">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Your Company (optional)">
+            </div>
+            <div class="form-group">
+              <label for="inquiry">Inquiry Type *</label>
+              <select id="inquiry" name="inquiry" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="partnership">Delivery Partnership</option>
+                <option value="quote">Get a Quote</option>
+                <option value="driver">Driver Application</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your delivery needs or how we can help..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+            <h3>Message Sent!</h3>
+            <p style="color: var(--text-light);">Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container fade-in">
+      <h2>Looking to Join Our Driver Network?</h2>
+      <p>We're always looking for professional, reliable drivers to join the Oathbound Express team.</p>
+      <div class="cta-buttons">
+        <a href="careers.html" class="btn btn-white">View Driver Opportunities</a>
+        <a href="services.html" class="btn btn-outline">Explore Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Logo.png" alt="Oathbound Express Logo">
+          <p>Metro Vancouver's trusted last-mile logistics and delivery service partner. Reliability you can count on.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Last-Mile Delivery</a>
+            <a href="services.html">DSP Partnerships</a>
+            <a href="services.html">Fleet Solutions</a>
+            <a href="services.html">Route Optimization</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <a href="mailto:support@oathboundexpress.com">support@oathboundexpress.com</a>
+            <a href="#">Metro Vancouver, BC</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Oathbound Express Delivery Inc. All rights reserved.</p>
+        <p>Proudly serving Metro Vancouver</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
